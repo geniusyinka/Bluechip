@@ -86,7 +86,7 @@ ul.topnav {
   justify-content: space-between;
 }
 
-ul.topnav li:last-child {
+select:last-child {
   border-right: none;
 }
 
@@ -103,7 +103,6 @@ select {
 }
 
 option {
-  padding: 14px 16px;
 display: flex;
 justify-content: center;
 align-content: center;
