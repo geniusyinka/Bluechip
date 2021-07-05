@@ -1,6 +1,11 @@
 import React from 'react';
 import Links from './Links';
 import { faChartBar, faComment, faHighlighter, faHome } from '@fortawesome/free-solid-svg-icons'
+import party from '../assets/party.svg'
+import group from '../assets/group.svg'
+import parade from '../assets/parade.svg'
+import connect from '../assets/connect.svg'
+import challange from '../assets/challange.svg'
 
 
 
@@ -23,16 +28,19 @@ function Sidebar({ open }) {
                         <Links icon={faChartBar} link="google.com" linkName="Ranking"/>
                     </li>
                     <li>
-                        <Links icon={faChartBar} link="google.com" linkName="Challange"/>
+                        <Links icons={challange} link="google.com" linkName="Challange"/>
                     </li>
                     <li>
-                        <Links icon={faChartBar} link="google.com" linkName="Party"/>
+                    <Links icons={party}  link="google.com" linkName="Party"/>
                     </li>
                     <li>
-                        <Links icon={faChartBar} link="google.com" linkName="Connect"/>
+                        <Links icons={connect} link="google.com" linkName="Connect"/>
                     </li>
                     <li>
-                        <Links icon={faChartBar} link="google.com" linkName="Parade"/>
+                        <Links icons={parade} link="google.com" linkName="Parade"/>
+                    </li>
+                    <li>
+                        <Links icons={group} link="google.com" linkName="Group"/>
                     </li>
                 </ul>
             </div>
