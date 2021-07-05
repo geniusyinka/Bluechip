@@ -10,7 +10,7 @@ function App() {
       <div id="sidebar" className=" w-1/4  ">
         <Sidebar/>
       </div>
-      <div id="homepage" className=" w-full">
+      <div id="homepage" className=" w-full pl-4 pr-4">
         <Home/>
       </div>
     </div>
