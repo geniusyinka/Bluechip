@@ -1,4 +1,5 @@
 import React from 'react';
+import PlaceIcon from '@material-ui/icons/Place';
 
 function User(props) {
     return (
@@ -10,7 +11,9 @@ function User(props) {
                 <div className="user-info">
                     <p>Martin, 24</p>
                     <div className="user location">
-                        Lekki, Lagos
+                    <PlaceIcon fontSize="small" />Lekki, Lagos
+                    
+
                     </div>
                 </div>
             </div>
