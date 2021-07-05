@@ -5,13 +5,27 @@ function Category(props) {
         <div id="menu">
 
             <ul className="topnav">
-                <li><a href="#" className="active">World</a></li>
-                <li><a href="#" className="active">Following</a></li>
-                <li><a href="#">Popular</a></li>
-                <li><a href="#">Post</a></li>
-                <li><a href="#">Gender</a></li>
-                <li><a href="#">Location</a></li>
-                <li><a href="#">Profession</a></li>
+                <select className="">
+                    <option>World</option>
+                </select>
+                <select className="">
+                    <option>Following</option>
+                </select>                
+                <select className="">
+                    <option>Popular</option>
+                </select> 
+                <select className="">
+                    <option>Post</option>
+                </select>                 
+                <select className="">
+                    <option>Gender</option>
+                </select>                 
+                <select className="">
+                    <option>Location</option>
+                </select> 
+                <select className="">
+                    <option>Profession</option>
+                </select> 
             </ul>
         </div>
     );
