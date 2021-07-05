@@ -3,7 +3,7 @@ import '../Search.css';
 import axios from 'axios';
 import Loader from '../loader.gif';
 import PageNavigation from './PageNavigation';
-import icon from '../assets/search.svg'
+import icon from './assets/search.svg'
 import User from './User';
 import Usernav from './Usernav';
 import Category from './Category';
@@ -171,7 +171,7 @@ class Search extends React.Component {
             <div className="user-comp mt-10  mb-10 flex flex-wrap justify-left">
 			    { this.renderSearchResults() }
             </div>
-            
+
 			{/*Navigation*/}
 			<PageNavigation
 				loading={loading}

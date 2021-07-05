@@ -1,11 +1,11 @@
 import React from 'react';
 import Links from './Links';
 import { faChartBar, faComment, faHighlighter, faHome } from '@fortawesome/free-solid-svg-icons'
-import party from '../assets/party.svg'
-import group from '../assets/group.svg'
-import parade from '../assets/parade.svg'
-import connect from '../assets/connect.svg'
-import challange from '../assets/challange.svg'
+import party from './assets/party.svg'
+import group from './assets/group.svg'
+import parade from './assets/parade.svg'
+import connect from './assets/connect.svg'
+import challange from './assets/challange.svg'
 
 
 
