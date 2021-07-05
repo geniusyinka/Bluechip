@@ -62,9 +62,10 @@ code {
 } */
 
 ul.topnav {
+  padding: 14px 16px;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   overflow: hidden;
   background-color: #fff;
   box-shadow: 0px 0px 8px 7px rgba(0, 0, 0, 0.04);
@@ -85,16 +86,26 @@ ul.topnav li a {
   border-right: 1px solid #000;
 }
 
+select {
+  border-right: 1px solid;
+}
+
+option {
+  padding: 14px 16px;
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+margin: 0 auto;
+}
+
 
 .home-cat {
   width: 75%;
 }
 
 
-@media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
-}
+
 
 
 .user {
@@ -119,6 +130,7 @@ ul.topnav li a {
 .user-image {
   border-radius: 12px;
   height: 300px;
+  object-fit: cover;
 }
 
 .user-profile-pic {
@@ -169,9 +181,9 @@ button {
   width: 30px;
 }
 
-.search-form {
+/* .search-form {
   width: 75%;
-}
+} */
 
 
 .notification-bell__clapper {
@@ -194,7 +206,7 @@ button {
   position: absolute;
   right: 200px;
   text-align: center;
-
+  display: none;
   transition: 100ms ease-in-out all;
   z-index: 1;
 }
@@ -218,13 +230,48 @@ button {
   right: 134px;
   text-align: center;
   top: 82px;
-
   transition: 100ms ease-in-out all;
   z-index: 1;
+  display: none;
 }
 
 .user-profile-name {
   background-color: #fff0;
   color: #3F36A1;
   cursor: pointer;
+}
+
+
+/* responsive */
+@media screen and (max-width: 835px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-search {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-icon {
+    margin-left: 0;
+    width: 17px;
+  }
+
+  .form-search {
+    width: auto;
+    margin-bottom: 0;
+  }
+  button {
+    margin-left: -50px;
+  }
+
+  .results-container {
+    justify-content: center;
+}
+
 }
