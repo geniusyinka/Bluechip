@@ -99,7 +99,7 @@ ul.topnav li a {
 }
 
 select {
-  border-right: 1px solid;
+  border-right: 1px solid rgba(0, 0, 0, 0.287);
 }
 
 option {
@@ -217,9 +217,9 @@ button {
   min-width: 9px;
   padding: 6px;
   position: absolute;
-  right: 200px;
+  /* right: 200px; */
   text-align: center;
-  display: none;
+  /* display: none; */
   transition: 100ms ease-in-out all;
   z-index: 1;
 }
@@ -228,7 +228,7 @@ button {
   fill: #3F36A1;
 }
 
-.status:after {
+.status:before {
   background-color: #43a029;
   border-radius: 11px;
   content: attr(data-count);
@@ -240,9 +240,9 @@ button {
   min-width: 9px;
   padding: 6px;
   position: absolute;
-  right: 134px;
+  /* right: 134px; */
   text-align: center;
-  top: 82px;
+  /* top: 82px; */
   transition: 100ms ease-in-out all;
   z-index: 1;
   display: none;
@@ -289,6 +289,15 @@ button {
 
 .user-comp {
   justify-content: center;
+}
+
+.user-icons {
+  justify-content: center;
+  margin-left: 0;
+}
+
+.home-cat {
+  width: 100%;
 }
 
 }
