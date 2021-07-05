@@ -1,3 +1,9 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,220 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F9F9FB;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* #menu {
+  margin: 0;
+  width: auto;
+  background-color: #565656;
+  font-size: 16px;
+  font-family: Tahoma, Geneva, sans-serif;
+  text-align: left;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 8px 7px rgba(0, 0, 0, 0.04);
+  border-radius: 5px 0px 0px 5px;
+} */
+
+/* #menu ul {
+  margin: 0;
+  list-style: none;
+  height: auto;
+}
+
+#menu li {
+  display: inline;
+  border-right:1px solid #bbb;
+}
+
+#menu a {
+  color: #000;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#menu li a {
+  padding: 14px 16px;
+} */
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px 7px rgba(0, 0, 0, 0.04);
+  border-radius: 5px; 
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.topnav li:last-child {
+  border-right: none;
+}
+
+ul.topnav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right: 1px solid #000;
+}
+
+
+.home-cat {
+  width: 75%;
+}
+
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+
+.user {
+  position: relative;
+  width: 200px;
+}
+
+.user-info {
+  position: absolute;
+  bottom: 20px;
+  text-align: left;
+  padding-left: 10px;
+  color: white;
+}
+
+.user-info p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
+.user-image {
+  border-radius: 12px;
+  height: 300px;
+}
+
+.user-profile-pic {
+  width: 40px;
+border-radius: 100%;
+height: 40px;
+object-fit: cover;
+}
+
+/* search box */
+
+form {
+  /* This bit sets up the horizontal layout */
+  display:flex;
+  flex-direction:row;
+  
+  /* This bit draws the box around it */
+  /* I've used padding so you can see the edges of the elements. */
+  padding:15px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 8px 7px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+}
+
+input {
+  /* Tell the input to use all the available space */
+  flex-grow:2;
+  /* And hide the input's outline, so the form looks like the outline */
+  border:none;
+}
+
+input:focus {
+  /* removing the input focus blue box. Put this on the form if you like. */
+  outline: none;
+}
+
+button {
+  /* Just a little styling to make it pretty */
+  background: #3F36A1;
+  color:white;
+  padding: 2px;
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+}
+
+.search-icon {
+  width: 30px;
+}
+
+.search-form {
+  width: 75%;
+}
+
+
+.notification-bell__clapper {
+  animation-timing-function: inherit; 
+  transform: translate(6px, 18px) rotate(0);
+  transform-origin: inherit;
+}
+
+.notification-bell:after {
+  background-color: #bf0000;
+  border-radius: 11px;
+  content: attr(data-count);
+  color: #fff;
+  display: block;
+  font-size: 10px;
+  font-family: helvetica;
+  line-height: 8px;
+  min-width: 9px;
+  padding: 6px;
+  position: absolute;
+  right: 200px;
+  text-align: center;
+
+  transition: 100ms ease-in-out all;
+  z-index: 1;
+}
+
+.bell {
+  fill: #3F36A1;
+}
+
+.status:after {
+  background-color: #43a029;
+  border-radius: 11px;
+  content: attr(data-count);
+  color: #fff;
+  display: block;
+  font-size: 10px;
+  font-family: helvetica;
+  line-height: 8px;
+  min-width: 9px;
+  padding: 6px;
+  position: absolute;
+  right: 134px;
+  text-align: center;
+  top: 82px;
+
+  transition: 100ms ease-in-out all;
+  z-index: 1;
+}
+
+.user-profile-name {
+  background-color: #fff0;
+  color: #3F36A1;
+  cursor: pointer;
 }
