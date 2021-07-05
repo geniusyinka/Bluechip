@@ -65,8 +65,7 @@ class Search extends React.Component {
 		})
 			.then( res => {
 				const total = res.data.total;
-				console.log(res.data.results)
-				const totalPagesCount = this.getPageCount( total, 10 );
+				const totalPagesCount = this.getPageCount( total, 12 );
 				const resultNotFoundMsg = ! res.data.results.length
 										? 'There are no more search results. Please try a new search'
 										: '';
@@ -172,6 +171,7 @@ class Search extends React.Component {
             <div className="user-comp mt-10  mb-10 flex flex-wrap justify-left">
 			    { this.renderSearchResults() }
             </div>
+            
 			{/*Navigation*/}
 			<PageNavigation
 				loading={loading}

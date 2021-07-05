@@ -3,7 +3,8 @@ import Links from './Links';
 import { faChartBar, faComment, faHighlighter, faHome } from '@fortawesome/free-solid-svg-icons'
 
 
-function Sidebar(props) {
+
+function Sidebar({ open }) {
     return (
         <div>
             <div className="sidebar mt-10 flex">
