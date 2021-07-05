@@ -34,17 +34,17 @@ function Home(props) {
         //.then(json => console.log(json))
     }
 
-    useEffect(() => {
-        getPictures()
-        .then(data => {
-            setPictures(data)
-            setloading(false)
-            console.log(pictures);
-        })
+    // useEffect(() => {
+    //     getPictures()
+    //     .then(data => {
+    //         setPictures(data)
+    //         setloading(true)
+    //         console.log(pictures);
+    //     })
 
         
 
-    },[]);
+    // },[]);
 
     const images = pictures.map((picture, index) => (
         <User 
@@ -52,20 +52,25 @@ function Home(props) {
     ))
     return (
         <div>
-            <div className="home-search flex">
+            {/* <div className="home-search flex"> */}
+            <div>
                 <Search/>
-                <Usernav/>
+                {/* <Usernav/> */}
             </div>
-            <div className="home-cat">
-                <Category/>
-            </div>
+
             
-                {loading || !pictures ? 
+                {/* {loading || !pictures ? 
                 <BeatLoader color={"#123abc"} loading={loading} css={override} size={50} speedMultiplier={1} margin={2} /> : 
                 <div className="user-comp mt-10  mb-10 flex flex-wrap justify-left">
                     {images}
                     </div>
-                 }
+                 } */}
+                 
+                 <div className="user-comp mt-10  mb-10 flex flex-wrap justify-left">
+
+                 <User 
+                     img='https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNDQzMTB8MHwxfHNlYXJjaHwxfHxtYW58ZW58MHx8fHwxNjI1NDg1ODc5&ixlib=rb-1.2.1&q=80&w=1080' />
+                    </div>
                 
             
 

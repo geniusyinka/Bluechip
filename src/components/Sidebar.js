@@ -9,7 +9,7 @@ function Sidebar(props) {
             <div className="sidebar mt-10 flex">
 
                 <ul className="m-auto">
-                <p className="text-left">Side Bar</p>
+                <p className="text-left">bluecube</p>
                     <li>
 
                     <Links icon={faHome} link="google.com" linkName="Home"/>
@@ -17,7 +17,7 @@ function Sidebar(props) {
                     <li>
                         <Links icon={faComment} link="google.com" linkName="Message"/>
                     </li>
-                    <h2 className="mt-3 text-left">Share</h2>
+                    <h2 className="mt-3 text-left font-bold">SHARE</h2>
                     <li>
                         <Links icon={faChartBar} link="google.com" linkName="Ranking"/>
                     </li>
