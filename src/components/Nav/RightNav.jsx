@@ -43,29 +43,29 @@ const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
       <li>
-        <Links icon={faHome} link="google.com" linkName="Home"/>
+        <Links icon={faHome} link="#" linkName="Home"/>
       </li>
         <li>
-            <Links className="img-filter" icon={faComment} link="google.com" linkName="Message"/>
+            <Links className="img-filter" icon={faComment} link="#" linkName="Message"/>
         </li>
         <h2 className="mt-3 ml-10 text-white text-left font-bold">SHARE</h2>
         <li>
-            <Links icon={faChartBar} link="google.com" linkName="Ranking"/>
+            <Links icon={faChartBar} link="#" linkName="Ranking"/>
         </li>
         <li>
-            <Links class="img-filter" icons={challange} link="google.com" linkName="Challange"/>
+            <Links class="img-filter" icons={challange} link="#" linkName="Challange"/>
         </li>
         <li>
-        <Links class="img-filter" icons={party}  link="google.com" linkName="Party"/>
+        <Links class="img-filter" icons={party}  link="#" linkName="Party"/>
         </li>
         <li>
-            <Links class="img-filter" icons={connect} link="google.com" linkName="Connect"/>
+            <Links class="img-filter" icons={connect} link="#" linkName="Connect"/>
         </li>
         <li>
-            <Links class="img-filter" icons={parade} link="google.com" linkName="Parade"/>
+            <Links class="img-filter" icons={parade} link="#" linkName="Parade"/>
         </li>
         <li>
-            <Links class="img-filter" icons={group} link="google.com" linkName="Group"/>
+            <Links class="img-filter" icons={group} link="#" linkName="Group"/>
         </li>
     </Ul>
   )
