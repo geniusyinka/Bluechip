@@ -4,6 +4,8 @@ import NotificationContainer from './NotificationContainer';
 function Usernav(props) {
     return (
         <div className=" user-icons mt-10 ml-10 mb-10 flex items-center">
+            <div className=" relative">
+
             <span  className='notification-bell'data-count={2}></span>
             <svg width='42' height='40' viewBox='0 0 21 20' className="mr-5">
                 <g transform='translate(2, 0)' className='bell'>
@@ -11,12 +13,15 @@ function Usernav(props) {
                     <path className='notification-bell__clapper' d='M2.5,2 C2.64,2 2.77,2 2.9,1.96 C3.55,1.82 4.09,1.38 4.34,0.78 C4.44,0.54 4.5,0.27 4.5,0 L0.5,0 C0.5,1.1045695 1.3954305,2 2.5,2 L2.5,2 Z'  />
                 </g>
             </svg>
-            
-            <div className='status' data-count=""></div>
-            <img className="user-profile-pic mr-5" src="https://images.unsplash.com/photo-1542331180-256bcd8edad7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80" alt="" />
-            <select className=" user-profile-name">
-                <option>Abigail</option>
-            </select>
+            </div>
+            <div className=" relative">
+                <div className='status' data-count=""></div>
+                <img className="user-profile-pic mr-5" src="https://images.unsplash.com/photo-1542331180-256bcd8edad7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80" alt="" />
+            </div>
+                <select className=" user-profile-name">
+                    <option>Abigail</option>
+                </select>
+                
         </div>
     );
 }

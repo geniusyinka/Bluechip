@@ -220,11 +220,12 @@ button {
   min-width: 9px;
   padding: 6px;
   position: absolute;
-  /* right: 200px; */
+  right: 20px;
   text-align: center;
   /* display: none; */
   transition: 100ms ease-in-out all;
   z-index: 1;
+  bottom: 0;
 }
 
 .bell {
@@ -243,12 +244,11 @@ button {
   min-width: 9px;
   padding: 6px;
   position: absolute;
-  /* right: 134px; */
+  right: 20px;
   text-align: center;
-  /* top: 82px; */
+  bottom: 0;
   transition: 100ms ease-in-out all;
   z-index: 1;
-  display: none;
 }
 
 .user-profile-name {
