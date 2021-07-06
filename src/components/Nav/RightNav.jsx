@@ -46,26 +46,26 @@ const RightNav = ({ open }) => {
         <Links icon={faHome} link="google.com" linkName="Home"/>
       </li>
         <li>
-            <Links icon={faComment} link="google.com" linkName="Message"/>
+            <Links className="img-filter" icon={faComment} link="google.com" linkName="Message"/>
         </li>
-        <h2 className="mt-3 ml-10 text-left font-bold text-white">SHARE</h2>
+        <h2 className="mt-3 ml-10 text-white text-left font-bold">SHARE</h2>
         <li>
             <Links icon={faChartBar} link="google.com" linkName="Ranking"/>
         </li>
         <li>
-            <Links className="text-white" icons={challange} link="google.com" linkName="Challange"/>
+            <Links class="img-filter" icons={challange} link="google.com" linkName="Challange"/>
         </li>
         <li>
-        <Links icons={party}  link="google.com" linkName="Party"/>
+        <Links class="img-filter" icons={party}  link="google.com" linkName="Party"/>
         </li>
         <li>
-            <Links icons={connect} link="google.com" linkName="Connect"/>
+            <Links class="img-filter" icons={connect} link="google.com" linkName="Connect"/>
         </li>
         <li>
-            <Links icons={parade} link="google.com" linkName="Parade"/>
+            <Links class="img-filter" icons={parade} link="google.com" linkName="Parade"/>
         </li>
         <li>
-            <Links icons={group} link="google.com" linkName="Group"/>
+            <Links class="img-filter" icons={group} link="google.com" linkName="Group"/>
         </li>
     </Ul>
   )
