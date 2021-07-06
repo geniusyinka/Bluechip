@@ -31,7 +31,7 @@ const Ul = styled.ul`
     width: 300px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-    z-index: 1;
+    z-index: 100;
 
     li {
       color: #fff;
@@ -48,12 +48,12 @@ const RightNav = ({ open }) => {
         <li>
             <Links icon={faComment} link="google.com" linkName="Message"/>
         </li>
-        <h2 className="mt-3 text-left font-bold">SHARE</h2>
+        <h2 className="mt-3 ml-10 text-left font-bold text-white">SHARE</h2>
         <li>
             <Links icon={faChartBar} link="google.com" linkName="Ranking"/>
         </li>
         <li>
-            <Links icons={challange} link="google.com" linkName="Challange"/>
+            <Links className="text-white" icons={challange} link="google.com" linkName="Challange"/>
         </li>
         <li>
         <Links icons={party}  link="google.com" linkName="Party"/>
