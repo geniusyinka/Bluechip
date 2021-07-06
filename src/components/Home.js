@@ -20,8 +20,6 @@ const override = css`
 
 function Home(props) {
 
-    
-    
     const [pictures, setPictures] = useState([])
     const [loading, setloading] = useState(true);
 
@@ -50,12 +48,10 @@ function Home(props) {
             <div>
                 <Search/>
                 {/* <Usernav/> */}
-            </div>
-
-            
+            </div>            
                 {loading || !pictures ? 
                 <BeatLoader color={"#123abc"} loading={loading} css={override} size={50} speedMultiplier={1} margin={2} /> : 
-                <div className="user-comp mt-10  mb-10 flex flex-wrap justify-left">
+                <div className="user-comp mb-10 flex flex-wrap justify-left">
                     {images}
                 </div>
                  }           
