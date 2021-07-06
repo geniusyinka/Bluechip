@@ -115,7 +115,10 @@ margin: 0 auto;
   width: 75%;
 }
 
-
+.img-filter {
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+}
 
 
 
