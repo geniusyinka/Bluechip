@@ -18,29 +18,29 @@ function Sidebar({ open }) {
                 <p className="text-left">bluecube</p>
                     <li>
 
-                    <Links icon={faHome} link="google.com" linkName="Home"/>
+                    <Links icon={faHome} link="#" linkName="Home"/>
                     </li>
                     <li>
-                        <Links icon={faComment} link="google.com" linkName="Message"/>
+                        <Links icon={faComment} link="#" linkName="Message"/>
                     </li>
                     <h2 className="mt-3 text-left font-bold">SHARE</h2>
                     <li>
-                        <Links icon={faChartBar} link="google.com" linkName="Ranking"/>
+                        <Links icon={faChartBar} link="#" linkName="Ranking"/>
                     </li>
                     <li>
-                        <Links icons={challange} link="google.com" linkName="Challange"/>
+                        <Links icons={challange} link="#" linkName="Challange"/>
                     </li>
                     <li>
-                    <Links icons={party}  link="google.com" linkName="Party"/>
+                    <Links icons={party}  link="#" linkName="Party"/>
                     </li>
                     <li>
-                        <Links icons={connect} link="google.com" linkName="Connect"/>
+                        <Links icons={connect} link="#" linkName="Connect"/>
                     </li>
                     <li>
-                        <Links icons={parade} link="google.com" linkName="Parade"/>
+                        <Links icons={parade} link="#" linkName="Parade"/>
                     </li>
                     <li>
-                        <Links icons={group} link="google.com" linkName="Group"/>
+                        <Links icons={group} link="#" linkName="Group"/>
                     </li>
                 </ul>
             </div>
